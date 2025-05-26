@@ -1,0 +1,17 @@
+@use "sass:string";
+
+$bg1: #2e2e2e;      // dark gray background
+$bg2: #1e1e1e;      // slightly lighter gray
+$fg1: #b0b0b0;      // light gray foreground 1
+$fg2: #d0d0d0;      // lighter gray foreground 2
+$accent: #7e7e7e;   // muted gray accent
+$error: #a04040;    // muted red error (kept subtle)
+$radius: 0px;
+
+$font1: "JetBrainsMono Nerd Font";
+$font2: "Fira Sans";
+
+@function gtkalpha($c, $a) {
+  @return string.unquote("alpha(#{$c},#{$a})");
+}
+
